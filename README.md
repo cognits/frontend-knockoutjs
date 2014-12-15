@@ -19,4 +19,5 @@ Answer the following questions in the [reflection.txt](README.md) file.
 
 1. What did you learn about KnockoutJS?
 2. What is MVVC? Why is it usefull?
-3.
+3. What does the data-bind attribute do?
+4. What does the following code do? ```ko.applyBindings(viewModel);```

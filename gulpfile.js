@@ -3,6 +3,7 @@ var w3cjs = require('gulp-w3cjs');
 var csslint = require('gulp-csslint');
 var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
+var pagespeed = require('psi');
 
 gulp.task('htmllint', function () {
     gulp.src('*.html')
@@ -23,5 +24,5 @@ gulp.task('lint', function() {
 });
 
 gulp.task('default', function() {
-  gulp.start('htmllint', 'csslint');
+  gulp.start('htmllint', 'csslint', 'lint');
 });

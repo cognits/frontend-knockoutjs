@@ -1,0 +1,40 @@
+
+<!DOCTYPE HTML SYSTEM>
+<head>
+
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" >
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1>Lists</h1>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+      <form data-bind="submit:addItem">
+        Add item: <input type="text" data-bind='value:itemToAdd, valueUpdate: "afterkeydown"' />
+        <button type="submit" data-bind="enable: itemToAdd().length > 0">Add</button>
+      </form>
+
+      <p>Your values:</p>
+      <select multiple="multiple" height="5" data-bind="options:allItems, selectedOptions:selectedItems"> </select>
+
+      <div>
+        <button data-bind="click: removeSelected, enable: selectedItems().length > 0">Remove</button>
+        <button data-bind="click: sortItems, enable: allItems().length > 1">Sort</button>
+      </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../bower_components/knockout/dist/knockout.js" type="text/javascript"></script>
+  <script src="../js/list.js" type="text/javascript"></script>
+</body>
+</html>

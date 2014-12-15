@@ -1,0 +1,29 @@
+{
+  "name": "frontend-knockoutjs",
+  "version": "0.0.1",
+  "homepage": "https://github.com/cognits/frontend-knockoutjs",
+  "authors": [
+    "Sebastian Ibarguen <s@cognits.co>"
+  ],
+  "description": "learning knockout",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "knockout"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "knockout": "~3.2.0",
+    "bootstrap": "~3.3.1"
+  }
+}

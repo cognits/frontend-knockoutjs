@@ -1,0 +1,15 @@
+{
+  "name": "frontend-portfolio ",
+  "version": "0.0.1",
+  "description": "An example module to illustrate the usage of a package.json",
+  "author": "Sebastian Ibarguen <s@cognits.co>",
+
+  "devDependencies": {
+    "gulp": ">=3.8.9",
+    "gulp-w3cjs": ">=0.2.1",
+    "gulp-csslint": ">=0.1.5",
+    "gulp-jshint": ">=1.9.0",
+    "jshint-stylish": "1.0.0"
+  }
+
+}
